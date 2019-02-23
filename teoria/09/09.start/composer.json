@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        },
+        "files": [
+            "support/html_helper.php",
+            "support/config.php"
+        ]
+    }
+}
