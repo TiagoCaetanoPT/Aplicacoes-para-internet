@@ -10,7 +10,6 @@ class User
     public $fullname;
     public $registered_at;
     public $type;
-    
 
     public function __construct(array $attributes = [])
     {
@@ -86,5 +85,4 @@ class User
         var_dump($userId);
         die('DELETE STATEMENT HERE');
     }
-
 }

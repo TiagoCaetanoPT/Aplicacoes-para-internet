@@ -1,6 +1,6 @@
 <?php
 if (count($errors) > 0) {
-    include 'src/views/users/partials/errors.view.php';
+    include 'src/views/partials/errors.view.php';
 }
 ?>
 <form action="user-edit.php" method="post" class="form-group">

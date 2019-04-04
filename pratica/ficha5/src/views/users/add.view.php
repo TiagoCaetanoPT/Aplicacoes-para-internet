@@ -1,10 +1,10 @@
 <?php
 if (count($errors) > 0) {
-    include 'src/views/users/partials/errors.view.php';
+    include 'src/views/partials/errors.view.php';
 }
 ?>
 <form action="user-add.php" method="post" class="form-group">
-    <?php require 'src/views/users/partials/add-edit.view.php' ?>
+    <?php require 'src/views/users/partials/add-edit.view.php'?>
     <div class="form-group">
         <label for="inputPassword">Password</label>
         <input

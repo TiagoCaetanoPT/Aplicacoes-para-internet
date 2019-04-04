@@ -15,9 +15,9 @@
       <thead>
         <tr>
           <th>*</th>
-            <?php for ($cabecalho=1; $cabecalho <= 10; $cabecalho++) { ?>
+            <?php for ($cabecalho=1; $cabecalho <= 10; $cabecalho++) : ?>
               <th><?=$cabecalho ?></th>
-            <?php } ?>
+            <?php endfor ?>
         </tr>
       </thead>
       <tbody>
@@ -39,3 +39,5 @@
 
   </body>
 </html>
+
+<ta

@@ -5,4 +5,4 @@ require 'vendor/autoload.php';
 use \Ainet\Controllers\UserController;
 
 $controller = new UserController();
-$controller->delete();
+$controller->add();
