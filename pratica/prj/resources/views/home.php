@@ -11,6 +11,8 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/app.css">
     <!-- fontawesome -->
