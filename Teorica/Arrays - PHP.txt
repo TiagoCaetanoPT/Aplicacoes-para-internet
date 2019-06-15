@@ -1,0 +1,5 @@
+Arrays - PHP
+
+
+Um arrey em php não tem indices.... É sempre composto por uma chave e valor.
+

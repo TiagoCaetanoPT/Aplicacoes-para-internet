@@ -1,8 +1,0 @@
-{
-    "autoload": {
-        "psr-4": {
-            "": "dvd_classes",
-            "meu\\": "meu_src"
-        }
-    }
-}	

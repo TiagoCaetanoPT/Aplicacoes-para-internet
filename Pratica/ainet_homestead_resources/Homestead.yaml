@@ -1,0 +1,115 @@
+---
+ip: "192.168.10.10"
+memory: 2048  # 1024 se o computador "host" tiver pouca memória
+cpus: 1
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: C:\<PastaComAdminer>   # Preencher com o caminho completo para a pasta com o adminer
+      to: /home/vagrant/adminer
+    - map: C:\<PastaAInet>        # Preencher com o caminho completo para a pasta de AInet
+      to: /home/vagrant/ainet
+
+    # Pastas a criar dentro da pasta de ainet:
+    # C:\<PastaAInet>\working 
+    # C:\<PastaAInet>\teoria 
+    # C:\<PastaAInet>\pratica\ficha1 
+    # C:\<PastaAInet>\pratica\ficha2 
+    # C:\<PastaAInet>\pratica\ficha3 
+    # C:\<PastaAInet>\pratica\ficha4 
+    # C:\<PastaAInet>\pratica\ficha5 
+
+    # Pastas a criar mais tarde, utilizando o utilitário "composer":
+    # C:\<PastaAInet>\teoria_laravel      
+    # C:\<PastaAInet>\pratica\ficha6      
+    # C:\<PastaAInet>\working_laravel      
+    # C:\<PastaAInet>\prjXXX              -- Substituir XXX pelo nº de grupo              
+
+sites:
+    - map: adminer.test
+      to: /home/vagrant/adminer
+    - map: ainet.working.test
+      to: /home/vagrant/ainet/working
+    - map: ainet.teoria.test
+      to: /home/vagrant/ainet/teoria
+    - map: ainet.teoria.09.complete.test
+      to: /home/vagrant/ainet/teoria/09/09.complete
+    - map: ainet.teoria.10.ourframework.test
+      to: /home/vagrant/ainet/teoria/10/10.our-framework
+    - map: ainet.teoria.10.laravel.test
+      to: /home/vagrant/ainet/teoria/10/10.laravel/public
+    - map: ainet.pratica.1.test
+      to: /home/vagrant/ainet/pratica/ficha1
+    - map: ainet.pratica.2.test
+      to: /home/vagrant/ainet/pratica/ficha2
+    - map: ainet.pratica.3.test
+      to: /home/vagrant/ainet/pratica/ficha3
+    - map: ainet.pratica.4.test
+      to: /home/vagrant/ainet/pratica/ficha4
+    - map: ainet.pratica.5.test
+      to: /home/vagrant/ainet/pratica/ficha5
+    # Os sites que utilizam o Laravel usam a pasta public: 
+    - map: ainet.laravel.working1.test
+      to: /home/vagrant/ainet/working_laravel1/public
+    - map: ainet.laravel.working2.test
+      to: /home/vagrant/ainet/working_laravel2/public
+    - map: ainet.pratica.6.test
+      to: /home/vagrant/ainet/pratica/ficha6/public
+
+    # Substituir XXX pelo número de grupo (quando atribuido):
+    # - map: ainet.prjXXX.test
+    #   to: /home/vagrant/ainet/prjXXX/public
+
+databases:
+    - homestead
+    - ainet_work
+    - ainet_teoria
+    - ainet_p5
+    - ainet_p6
+    - ainet_laravel_work1
+    - ainet_laravel_work2
+    - ainet_prj
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# zray:
+#  If you've already freely registered Z-Ray, you can place the token here.
+#     - email: foo@bar.com
+#       token: foo
+#  Don't forget to ensure that you have 'zray: "true"' for your site.
+
+
+    # ACRESCENTAR AO FICHEIRO HOSTS:
+    
+    # Windows:          C:\Windows\System32\drivers\etc\hosts
+    # MacOS; Linux:     /etc/hosts
+
+    # 192.168.10.10 adminer.test
+    # 192.168.10.10 ainet.working.test ainet.teoria.test 
+    # 192.168.10.10 ainet.teoria.09.complete.test  
+    # 192.168.10.10 ainet.teoria.10.ourframework.test ainet.teoria.10.laravel.test
+    # 192.168.10.10 ainet.pratica.1.test ainet.pratica.2.test ainet.pratica.3.test 
+    # 192.168.10.10 ainet.pratica.4.test ainet.pratica.5.test ainet.pratica.6.test
+    # 192.168.10.10 ainet.laravel.working1.test ainet.laravel.working2.test
+
+    # # Acrescentar apenas quando souberem o número de grupo
+    # # Substituir XXX pelo número de grupo
+    # 192.168.10.10 ainet.prjXXX.test
+    
+    # FIM DE ACRESCENTAR AO FICHEIRO HOSTS 

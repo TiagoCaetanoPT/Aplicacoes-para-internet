@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form: upload file</title>
+</head>
+<body>
+    <h1>Form: upload file</h1>
+    <a href='../index.html#04forms'>Back to the start</a>
+    <hr>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="description_id">Image description:</label>
+            <input type="text" id="description_id" name="description">
+        </div>
+        <div>
+            <label for="image_id">Image:</label>
+            <input type="file" id="image_id" name="filefromclient">  
+        </div>
+        <div>
+            <input type="submit" value="Send File">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form: post method</title>
+</head>
+<body>
+    <h1>Form: post method</h1>
+    <a href='../index.html#04forms'>Back to the start</a>
+    <hr>
+    <form action="process_form_controls.php" method="post">
+        <div>
+            <label for="input_text_id">Input - text:</label>
+            <input type="text" id="input_text_id" name="input_text" placeholder="Marco Monteiro">
+        </div>
+        <br>
+        <div>
+            <label for="input_password_id">Input - password:</label>
+            <input type="password" id="input_password_id" name="input_password">
+        </div>
+        <div>
+            <!-- To pass hidden values to the client and back to the server -->
+            <input type="hidden" name="internal_id" value="123">
+        </div>
+        <br>
+        <div>
+            <label for="input_sex_male_id">Male:</label>
+            <input type="radio" id="input_sex_male_id" name="input_sex" value="male" checked>
+            <label for="input_sex_female_id">Female:</label>
+            <input type="radio" id="input_sex_female_id" name="input_sex" value="female">
+        </div>
+        <br>
+        <div>
+            <br><label for="id_active">Is Active:</label>
+            <input type="checkbox" id="id_active" name="active" value="yes" checked>
+        </div>
+        <br>
+        <div>
+            <br><label for="id_ti">Tecnologias de Internet:</label>
+            <input type="checkbox" id="id_ti" name="courses[]" value="TI" checked>
+            <br><label for="id_ainet">Aplicações para a Internet:</label>
+            <input type="checkbox" id="id_ainet" name="courses[]" value="AInet">
+            <br><label for="id_dad">Desenvolvimento Aplicações Distribuídas:</label>
+            <input type="checkbox" id="id_dad" name="courses[]" value="DAD" checked>
+        </div>        
+        <br>        
+        <div>
+            <label for="input_date_id">Input - date:</label>
+            <input type="date" id="input_date_id" name="input_date">
+        </div>
+        <br>        
+        <div>
+            <label for="input_search_id">Input - search:</label>
+            <input type="search" id="input_search_id" name="input_search">
+        </div>
+        <br>        
+        <div>
+            <label for="input_email_id">Input - email:</label>
+            <input type="email" id="input_email_id" name="input_email">
+        </div>
+        <br>        
+        <div>
+            <label for="input_color_id">Input - color:</label>
+            <input type="color" id="input_color_id" name="input_color">
+        </div>
+        <br>        
+        <div>
+            <label for="input_number_id">Input - number:</label>
+            <input type="number" id="input_number_id" name="input_number">
+        </div>
+        <br>        
+        <div>
+            <label for="input_range_id">Input - range:</label>
+            <input type="range" id="input_range_id" name="input_range">
+        </div>
+        <br>        
+        <div>
+            <label for="input_url_id">Input - url:</label>
+            <input type="url" id="input_url_id" name="input_url">
+        </div>
+        <br>        
+        <div>
+            <label for="input_tel_id">Input - tel:</label>
+            <input type="tel" id="input_tel_id" name="input_tel">
+        </div>
+        <br>        
+        <div>
+            <label for="input_month_id">Input - month:</label>
+            <input type="month" id="input_month_id" name="input_month">
+        </div>
+        <br>        
+        <div>
+            <label for="input_week_id">Input - week:</label>
+            <input type="week" id="input_week_id" name="input_week">
+        </div>
+        <br>        
+        <div>
+            <label for="input_time_id">Input - time:</label>
+            <input type="time" id="input_time_id" name="input_time">
+        </div>
+        <br>  
+        <div>
+            <label for="input_datetime_local_id">Input - datetime-local:</label>
+            <input type="datetime-local" id="input_datetime_local_id" name="input_datetime_local">
+        </div>
+        <br> <hr> 
+        <div>
+            <label for="select_id">Active Course:</label>
+            <select id="select_id" name="active_course">
+                <option value="TI">Tecnologias de Internet</option>
+                <option value="AInet" selected>Aplicações para a Internet</option>
+                <option value="DAD">Desenvolvimento Aplicações Distribuídas</option>
+            </select>
+        </div>
+        <br> 
+        <div>
+            <label for="selectmultiple_id">Select Multiple Courses:</label>
+            <select id="selectmultiple_id" name="multiple_courses" multiple>
+                <option value="TI">Tecnologias de Internet</option>
+                <option value="AInet" selected>Aplicações para a Internet</option>
+                <option value="DAD">Desenvolvimento Aplicações Distribuídas</option>
+            </select>
+        </div>
+        <br> <hr> 
+        <div>
+            <label for="textarea_id">Textarea:</label>
+            <textarea id="textarea_id" name="textarea_field" rows="5" cols="48">Initial text on the box</textarea>    
+        </div>
+        <br> <hr> 
+        <div>
+        <fieldset>
+            <legend>Condiments</legend>
+            <input type="checkbox" name="spice[]" value="salt">Salt <br>
+            <input type="checkbox" name="spice[]" value="pepper">Pepper<br>
+            <input type="checkbox" name="spice[]" value="garlic">Garlic<br>
+        </fieldset>
+        </div>
+        <br> <hr> 
+        <div>
+            <input type="submit" value="input type = submit">
+            <input type="reset" value="input type = reset">
+            <input type="button" value="input type = button">
+        </div>
+        <br>        
+        <div>
+            <input type="submit">
+        </div>
+        <br>
+        <div>
+            <input type="image" src="img1.jpeg" alt="IPL logo">
+        </div>
+
+    </form>
+</body>
+</html>
+

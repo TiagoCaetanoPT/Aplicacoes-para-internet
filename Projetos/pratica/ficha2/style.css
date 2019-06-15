@@ -1,0 +1,25 @@
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    width:2em;
+    height:2em;
+    text-align: center;
+    vertical-align: middle;
+    color:#fff;
+}
+
+td {
+  background-color: red;
+}
+
+th {
+    font-weight: normal;
+    background-color: #8F0000;
+}
+
+.diag {
+    background-color: #5C0000
+}
